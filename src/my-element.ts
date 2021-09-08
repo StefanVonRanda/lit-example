@@ -21,14 +21,12 @@ export class MyElement extends LitElement {
   /**
    * The name to say "Hello" to.
    */
-  @property()
-  name = 'Example'
+  @property({ type: String }) name = 'Example'
 
   /**
    * The number of times the button has been clicked.
    */
-  @property({ type: Number })
-  count = 0
+  @property({ type: Number }) count = 0
 
   render() {
     return html`
